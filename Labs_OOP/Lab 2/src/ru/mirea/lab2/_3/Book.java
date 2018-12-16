@@ -10,7 +10,11 @@ public class Book {
     }
     Book (String title, String author)
     {
-
+        this.title = title;
+        this.author = author;
+        publishingyear = 2077;
+        style = Style.futuristic;
+        genre = Genre.Science;
     }
     Book (String title, String author, int publishingyear, int circulation, Style style, Genre genre)
     {
