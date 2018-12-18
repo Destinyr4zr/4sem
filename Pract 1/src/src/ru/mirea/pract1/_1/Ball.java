@@ -3,6 +3,7 @@ package src.ru.mirea.pract1._1;
 import java.lang.*;
 
 public class Ball {
+    //Создание мяча без параметров
     public Ball() {
         manufacturer = "China";
         colour = Colour.Transparent;
@@ -12,7 +13,7 @@ public class Ball {
         weight = 0;
         plating = Plating.Sexy;
     }
-
+//Создание мяча с параметрами
     public Ball(String manufacturer, Colour colour, Secondarycolour secondarycolour, Type type, Shape shape,
                 double weight, Plating plating) {
         this.manufacturer = manufacturer;
@@ -33,11 +34,11 @@ public class Ball {
         weight = 1.5;
         plating = Plating.Supermetafantasycoolness;
     }
-
+//Вывод описания мяча
     public String ToString() {
         return "Congrats! U R kicking " + manufacturer + " " + colour + "\n" + type + " " + shape + " ball with "+ secondarycolour+" paintings, weighing " + weight + " kg" + " in \n" + plating + " coverage!";
     }
-
+//Действия с характеристиками мяча
     public void setmanufacturer (String manufacturer){this.manufacturer = manufacturer;}
 
     public String getmanufacturer() {return manufacturer;}
@@ -66,6 +67,7 @@ public class Ball {
 
     public Plating getplating () {return plating;}
 
+    //Перечисления свойств мяча
     private String manufacturer;
     private Colour colour;
     private Secondarycolour secondarycolour;
